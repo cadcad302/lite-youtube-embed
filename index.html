@@ -3,15 +3,20 @@
   <head>
     <title>lite-youtube-embed</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
     <link rel="stylesheet" href="./src/lite-yt-embed.css" />
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
-    <button>press</button>
+    
 
     <lite-youtube videoid=""></lite-youtube>
 
     <script src="./src/lite-yt-embed.js"></script>
+    <form action="index.html">
+      <label for="digits">Ending Digits:</label>
+      <input type="text" name="digits" id="digits">
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
