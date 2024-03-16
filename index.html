@@ -3,20 +3,26 @@
   <head>
     <title>lite-youtube-embed</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./src/lite-yt-embed.css" />
     <link rel="stylesheet" href="custom.css" />
+    <script>
+      function GetInputDigits() {
+        var digitsToAdd = document.getElementById("digits").value;
+        document.getElementById("digitsToAdd").innerText = digitsToAdd
+      }
+    </script>
   </head>
   <body>
     
 
-    <lite-youtube videoid="digits"></lite-youtube>
+    <lite-youtube videoid="digitsToAdd"></lite-youtube>
 
     <script src="./src/lite-yt-embed.js"></script>
     <form action="index.html">
       <label for="digits">Ending Digits:</label>
       <input type="text" name="digits" id="digits">
-      <input type="submit" value="Submit">
+      <input type="submit" onclick="GetInputDigits" value="Submit">
     </form>
   </body>
 </html>
